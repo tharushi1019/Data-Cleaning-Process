@@ -1,84 +1,97 @@
-# 🧹 Hotel Booking Dataset - Data Cleaning Project
+# 🧼 Hotel Booking Data Cleaning Project
 
-This repository contains a complete data cleaning pipeline for the Hotel Booking dataset using Python and Jupyter Notebook. It includes:
-
-- 📂 Raw and Cleaned Datasets  
-- 📝 Jupyter Notebook with step-by-step cleaning process  
-- 📄 Markdown Report summarizing all cleaning tasks  
+This project focuses on cleaning and preparing the **Hotel Booking Demand Dataset** for further analysis or machine learning tasks. The cleaning process includes handling missing values, correcting data types, removing duplicates, renaming columns, and formatting for consistency.
 
 ---
 
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```
 
 student\_name\_data\_cleaning/
 ├── data/
-│   ├── hotel\_bookings.csv               # Original dataset
+│   ├── hotel\_bookings.csv               # Original raw dataset
 │   └── hotel\_bookings\_cleaned.csv       # Cleaned dataset
 ├── notebooks/
-│   └── data\_cleaning\_process.ipynb      # Jupyter notebook with cleaning process
+│   └── data\_cleaning\_process.ipynb      # Jupyter Notebook with step-by-step cleaning process
 ├── reports/
-│   └── data\_cleaning\_report.md          # Summary report (Markdown version)
-└── scripts/
-└── cleaning\_functions.py            # Optional Python script (if any)
+│   └── data\_cleaning\_report.md          # Markdown report with detailed explanation
+├── scripts/
+│   └── cleaning\_functions.py            # Python script with reusable cleaning functions (optional)
+└── README.md                            # Project overview and instructions
 
 ````
 
 ---
 
-## 📊 Dataset Info
+## 📌 Dataset Info
 
-- **Source:** [Kaggle - Hotel Booking Demand Dataset](https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand)
-- **Rows:** ~119,000  
-- **Columns:** 32  
-- **Features include:** hotel type, booking date, customer type, cancellations, stays, prices, etc.
-
----
-
-## ✅ Cleaning Tasks Performed
-
-- Removed irrelevant columns  
-- Renamed ambiguous column names  
-- Handled missing data:
-  - Replaced null values with appropriate defaults
-- Fixed data types (e.g., date columns)  
-- Removed duplicates  
-- Normalized inconsistent values (e.g., replacing `NULL`, `Na`, etc.)
+- **Source:** [Hotel Booking Demand Dataset - Kaggle](https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand)
+- **Records:** 119,390 rows
+- **Features:** 32 columns
+- **File Format:** CSV
 
 ---
 
-## 🚀 How to Run
+## ✅ Cleaning Summary
 
-1. Clone the repository:
-   ```bash
+| Step                          | Description                                         |
+|-------------------------------|-----------------------------------------------------|
+| 🧹 Missing Value Handling     | Filled missing values in `children`, `country`, etc.|
+| 🔄 Type Conversion            | Converted `is_canceled`, `lead_time`, etc. to `int` |
+| 🧽 Column Cleaning            | Removed extra spaces and renamed columns            |
+| 🧾 Duplicate Removal          | Dropped duplicate rows                              |
+| 📊 Output                     | `hotel_bookings_cleaned.csv`                        |
+
+---
+
+## 📘 How to Use
+
+1. Clone this repository:
+
    git clone https://github.com/yourusername/hotel-booking-data-cleaning.git
    cd hotel-booking-data-cleaning
-````
 
-2. Install required libraries (optional):
+2. Open the Jupyter Notebook:
 
-   ```bash
-   pip install pandas numpy matplotlib seaborn
-   ```
-
-3. Open and run the notebook:
-
-   ```bash
    jupyter notebook notebooks/data_cleaning_process.ipynb
-   ```
+
+3. Review the `data/` folder for raw and cleaned datasets.
+
+4. Read the full markdown report at:
+
+   reports/data_cleaning_report.md
+
 
 ---
 
-## 📌 Author
+## 🛠️ Tools & Libraries
 
-* 👩‍💻 Tharushi (Undergraduate, BSc (Hons) in Information Technology)
+* Python 🐍
+* Pandas 📊
+* NumPy 🔢
+* Jupyter Notebook 📓
 
 ---
 
-## 📝 License
+## ✍️ Author
 
-This project is open-source and available under the [MIT License](LICENSE).
+* **Name:** Tharushi
+* **Degree:** BSc (Hons) in Information Technology
+* **Institution:** Horizon Campus, Sri Lanka
+* **Course:** Intelligent Systems & Data Analytics
+
+---
+
+## 📜 License
+
+This project is open-source under the [MIT License](LICENSE).
+
+---
+
+## 📬 Contact
+
+For feedback or collaboration, feel free to open an issue or reach out via GitHub!
 
 ---
 
